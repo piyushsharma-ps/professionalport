@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #D4AF37;
+    --gold-light: #F3E5AB;
+    --gold-bright: #E5C158;
+    --gold-dark: #997A15;
+    --gold-muted: rgba(212, 175, 55, 0.25);
+    --gold-glow: rgba(212, 175, 55, 0.12);
+    --bg-black: #080808;
+    --bg-surface: #0E0E10;
+    --bg-card: #121214;
+    --bg-card-hover: #18181C;
+    --text-primary: #F4F4F6;
+    --text-secondary: #9E9EA8;
+    --text-muted: #666670;
+    --border-subtle: rgba(255, 255, 255, 0.07);
+    --border-gold: rgba(212, 175, 55, 0.3);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #080808;
+    color: #F4F4F6;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #080808;
+    color: #F4F4F6;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Custom luxury scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080808;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2A2A2E;
+    border-radius: 3px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37;
+  }
+}
+
+/* Typography Utility Classes */
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Luxury Metallic Gold Gradients */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF6D6 0%, #E5C158 35%, #D4AF37 60%, #AA7B1E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-subtle {
+  background: linear-gradient(135deg, #F0E6D2 0%, #D4AF37 50%, #997A15 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(135deg, rgba(212, 175, 55, 0.6), rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.4)) 1;
+}
+
+.gold-box-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.08);
+}
+
+.gold-box-glow-hover:hover {
+  box-shadow: 0 0 35px rgba(212, 175, 55, 0.16);
+}
+
+/* Subtle luxury noise & radial patterns */
+.luxury-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(212, 175, 55, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+}
+
+.luxury-dot-pattern {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
